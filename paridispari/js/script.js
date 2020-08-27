@@ -11,18 +11,18 @@ console.log("il numero è " + totale);
 function checkPariODispari() {
  var check = false;
  if (totale % 2 == 0) {
-  return  check = true;
+  return  'pari';
  }
  else {
-   return check = false;
+   return 'dispari';
  }
 }
 
 var checkTest = checkPariODispari(totale);
 
-if (checkTest == true) {
-  console.log("Il numero è pari se hai scelto pari hai vinto.")
+if (checkTest == pariODispari) {
+  console.log("hai vinto");
 }
 else {
-  console.log("il numero è dispari se hai scelto dispari hai vinto");
+  console.log("hai perso");
 }
